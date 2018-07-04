@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.company.product"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+    implementation "android.arch.lifecycle:runtime:1.1.1"
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+
+    implementation'io.reactivex.rxjava2:rxjava:2.1.9'
+    implementation'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'ren.yale.android:retrofitcachelibrx2:1.0.7'
+
+    implementation 'com.alibaba:fastjson:1.1.55.android'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation 'com.orhanobut:logger:2.2.0'
+}
+repositories {
+    mavenCentral()
+}

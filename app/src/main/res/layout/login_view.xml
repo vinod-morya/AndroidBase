@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id = "@+id/rootLayout"
+	  xmlns:android = "http://schemas.android.com/apk/res/android"
+	  android:layout_width = "match_parent"
+	  android:layout_height = "match_parent"
+	  android:orientation = "vertical" >
+  
+  <TextView
+		 android:layout_width = "match_parent"
+		 android:layout_height = "wrap_content"
+		 android:gravity = "center"
+		 android:text = "Room &amp; Cache"
+		 android:textColor = "@color/colorBlack"
+		 android:textStyle = "bold" />
+  
+  <LinearLayout
+		 android:id = "@+id/ll"
+		 android:layout_width = "match_parent"
+		 android:layout_height = "wrap_content"
+		 android:layout_alignParentTop = "true"
+		 android:layout_marginTop = "20dp"
+		 android:orientation = "horizontal"
+		 android:weightSum = "2" >
+	 
+	 
+	 <Button
+			android:id = "@+id/btnRbLogin"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_marginTop = "5dp"
+			android:layout_weight = "1"
+			android:background = "@color/colorPrimary"
+			android:text = "Get User"
+			android:textColor = "@color/colorWhite" />
+	 
+	 <Button
+			android:id = "@+id/btnRbSignUp"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_marginStart = "5dp"
+			android:layout_marginTop = "5dp"
+			android:layout_weight = "1"
+			android:background = "@color/colorPrimary"
+			android:text = "Get List"
+			android:textColor = "@color/colorWhite" />
+  </LinearLayout >
+  
+  <LinearLayout
+		 android:id = "@+id/ll2"
+		 android:layout_width = "match_parent"
+		 android:layout_height = "wrap_content"
+		 android:layout_below = "@+id/ll"
+		 android:orientation = "horizontal"
+		 android:weightSum = "2" >
+	 
+	 <EditText
+			android:id = "@+id/etSearch"
+			android:layout_width = "0dp"
+			android:layout_height = "match_parent"
+			android:layout_weight = "1"
+			android:hint = "Mobile number"
+			android:text = "" />
+	 
+	 <Button
+			android:id = "@+id/room"
+			android:layout_width = "0dp"
+			android:layout_height = "wrap_content"
+			android:layout_below = "@+id/ll"
+			android:layout_centerHorizontal = "true"
+			android:layout_marginTop = "30dp"
+			android:layout_weight = "1"
+			android:background = "@color/colorPrimary"
+			android:onClick = "getPersonByMobile"
+			android:text = "Search"
+			android:textColor = "@color/colorWhite" />
+  
+  </LinearLayout >
+  
+  <ScrollView
+		 android:layout_width = "match_parent"
+		 android:layout_height = "match_parent"
+		 android:layout_alignParentBottom = "true"
+		 android:layout_below = "@+id/ll2"
+		 android:layout_marginTop = "10dp" >
+	 
+	 <TextView
+			android:id = "@+id/tvHistory"
+			android:layout_width = "match_parent"
+			android:layout_height = "match_parent" />
+  </ScrollView >
+</RelativeLayout >
