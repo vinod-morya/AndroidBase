@@ -22,9 +22,6 @@ import com.company.product.Support.Network.NetworkCallbackInterfaces
 import com.orhanobut.logger.Logger
 
 
-/**
- * Created by Pawan on 6/7/2018.
- */
 
 class LoginActivity : AppCompatActivity(), LoginContracts.ILoginView, View.OnClickListener, NetworkCallbackInterfaces.DataManagerCallbacks, NetworkCallbackInterfaces.LoginCallbacks {
     private var btnRbSignUp: Button? = null

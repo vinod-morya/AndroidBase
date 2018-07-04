@@ -11,9 +11,6 @@ import com.company.product.R
 
 import ren.yale.android.retrofitcachelibrx2.RetrofitCache
 
-/**
- * Created by Pawan on 5/31/2018.
- */
 
 class SplashActivity : Activity() {
 
@@ -36,6 +33,6 @@ class SplashActivity : Activity() {
     }
 
     companion object {
-        private val SPLASH_TIME_OUT = 1500
+        private val SPLASH_TIME_OUT = 1000
     }
 }
