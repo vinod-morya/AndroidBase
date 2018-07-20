@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Name this file “colors.xml” -->
-    <!-- Then place it in your project's “res/values/” folder. -->
-    <!-- Created by Marcel Ulbrich -->
-    <!-- google.com/+MarcelUlbrich -->
-    <!-- Updated 2014-12-09 to reflect Google's latest changes -->
 
     <color name="red_050">#FFEBEE</color> <!-- Use with black text -->
     <color name="red_100">#FFCDD2</color> <!-- Use with black text -->

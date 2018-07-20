@@ -22,9 +22,6 @@ import java.io.File
 import java.io.IOException
 import java.util.concurrent.TimeUnit
 
-/**
- * Created by Yale on 2017/6/12.
- */
 enum class NetworkClientRx {
     INSTANCE;
 

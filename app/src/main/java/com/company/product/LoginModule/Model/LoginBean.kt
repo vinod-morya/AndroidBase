@@ -3,9 +3,7 @@ package com.company.product.LoginModule.Model
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-/**
- * Created by John on 6/3/2018.
- */
+
 
 
 class LoginBean {

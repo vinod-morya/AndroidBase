@@ -13,9 +13,6 @@ import android.view.Window;
 import com.airbnb.lottie.LottieAnimationView;
 import com.company.product.R;
 
-/**
- * Created by burakustun on 03/02/2018.
- */
 
 public class LottieDialogFragment extends DialogFragment {
 	

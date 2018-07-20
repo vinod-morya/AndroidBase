@@ -5,9 +5,6 @@ import android.net.Uri
 import com.company.product.Support.Database.ContentDescriptor
 
 
-/**
- * Created by vinod on 29/10/15.
- */
 object ContactsTable {
     val TABLE_NAME = "contacts"
     val PATH = "contacts"

@@ -4,9 +4,6 @@ import com.google.gson.annotations.Expose
 
 import java.util.ArrayList
 
-/**
- * Created by Shivam on 3/5/2018.
- */
 
 class TicketListBean {
 
