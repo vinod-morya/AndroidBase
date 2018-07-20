@@ -3,11 +3,6 @@ package com.company.product.Support.Network
 
 import android.content.Context
 import android.util.Log
-
-import java.io.File
-import java.io.IOException
-import java.util.concurrent.TimeUnit
-
 import io.reactivex.ObservableTransformer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
@@ -23,6 +18,9 @@ import ren.yale.android.retrofitcachelibrx2.transformer.CacheTransformer
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import java.io.File
+import java.io.IOException
+import java.util.concurrent.TimeUnit
 
 /**
  * Created by Yale on 2017/6/12.
@@ -31,6 +29,7 @@ enum class NetworkClientRx {
     INSTANCE;
 
     private var mContext: Context? = null
+    private val BASE_URL = "yourURL"
 
     val okHttpClient: OkHttpClient
         get() {
@@ -55,7 +54,7 @@ enum class NetworkClientRx {
     fun init(context: Context) {
         mContext = context
         if (apiInterface == null) {
-            apiInterface = configRetrofit<ApiInterface>(ApiInterface::class.java, "http://203.122.16.227:8088/dhanukaV2/v1/")
+            apiInterface = configRetrofit<ApiInterface>(ApiInterface::class.java, BASE_URL)
         }
         RetrofitCache.getInstance().cacheInterceptorListener = CacheInterceptorListener { request, response -> true }
 

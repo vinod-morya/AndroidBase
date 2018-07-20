@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.firebase.firebase-perf'
+apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 27
@@ -28,15 +31,21 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
 
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-perf:16.0.0'
+    implementation 'com.google.firebase:firebase-crash:16.0.1'
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.5'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.4'
+
     implementation "android.arch.persistence.room:runtime:1.1.1"
     annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
     implementation "android.arch.lifecycle:runtime:1.1.1"
     implementation "android.arch.lifecycle:extensions:1.1.1"
 
-    implementation'io.reactivex.rxjava2:rxjava:2.1.9'
-    implementation'io.reactivex.rxjava2:rxandroid:2.0.1'
-    implementation'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
-    implementation'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.16'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
     implementation 'ren.yale.android:retrofitcachelibrx2:1.0.7'
 
     implementation 'com.alibaba:fastjson:1.1.55.android'
@@ -44,7 +53,17 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     implementation 'com.orhanobut:logger:2.2.0'
+    implementation 'am.appwise.components:NoInternetDialog:1.1.3'
+
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.airbnb.android:lottie:2.5.0'
 }
 repositories {
     mavenCentral()
 }
+
+
+apply plugin: 'com.google.gms.google-services'
