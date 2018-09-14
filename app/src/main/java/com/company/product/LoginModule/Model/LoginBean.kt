@@ -8,6 +8,7 @@ import com.google.gson.annotations.SerializedName
 
 class LoginBean {
 
+
     @SerializedName("status")
     @Expose
     var status: String? = null

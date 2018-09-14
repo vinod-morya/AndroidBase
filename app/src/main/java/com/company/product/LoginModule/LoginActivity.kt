@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity(), LoginContracts.ILoginView, View.OnCli
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login_view)
         userViewModel = ViewModelProviders.of(this).get(UserViewModel::class.java)
-        mLoginPresenter = LoginActivityPresenterImpl(this);
+        mLoginPresenter = LoginActivityPresenterImpl(this)
         initObservers()
         initView()
 

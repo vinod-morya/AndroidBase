@@ -26,7 +26,7 @@ enum class NetworkClientRx {
     INSTANCE;
 
     private var mContext: Context? = null
-    private val BASE_URL = "yourURL"
+    private val BASE_URL = "http://203.122.16.227:8088/dhanukaV2/v1/"
 
     val okHttpClient: OkHttpClient
         get() {

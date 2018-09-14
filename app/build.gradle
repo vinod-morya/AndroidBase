@@ -60,6 +60,10 @@ dependencies {
 
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     implementation 'com.airbnb.android:lottie:2.5.0'
+    def appCenterSdkVersion = '1.8.0'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
 }
 repositories {
     mavenCentral()
